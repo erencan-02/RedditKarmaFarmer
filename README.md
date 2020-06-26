@@ -28,6 +28,13 @@ user = User("reddit_USERNAME", "reddit_PASSWORD")
 #Comment list that the bot can use
 comments = ["random comments", "a", "b", "c"]
 
+#You need a webdriver in order to run selenium
+options = webdriver.ChromeOptions()
+options.add_argument("--disable-popup-blocking")
+options.add_argument("--disable-infobars")
+options.add_argument("--disable-notifications")
+driver = webdriver.Chrome(chrome_options=options)
+
 #Initiate the bot and run it
 bot = Bot(driver, user, comments, subreddits)
 bot.run()
