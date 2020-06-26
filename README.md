@@ -2,6 +2,8 @@
 
 RedditKarmaFarmer is a bot for farming karma points on Reddit.
 
+![alt text](https://imgur.com/9PemMZI)
+
 ## Installation
 
 Use the git clone command to install RedditKarmaFarmer.
