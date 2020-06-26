@@ -2,7 +2,7 @@
 
 RedditKarmaFarmer is a bot for farming karma points on Reddit.
 
-![alt text](https://imgur.com/9PemMZI)
+![alt text](https://i.imgur.com/9PemMZI.png)
 
 ## Installation
 
