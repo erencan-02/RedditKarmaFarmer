@@ -41,6 +41,9 @@ bot.run()
 
 ```
 
+## Note
+The Webdriver (in this case Chromedriver) has to be in the root directory.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
