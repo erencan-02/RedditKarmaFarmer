@@ -1,1 +1,1 @@
-"# RedditKarmaFarmer" 
+# RedditKarmaFarmer
