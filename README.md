@@ -23,7 +23,7 @@ subreddits = {
 }
 
 #Make a new user
-user = User("reddit_USERNAME", "reddit_PASSWORD")
+user = KarmaFarmer.User("reddit_USERNAME", "reddit_PASSWORD")
 
 #Comment list that the bot can use
 comments = ["random comments", "a", "b", "c"]
@@ -36,7 +36,7 @@ options.add_argument("--disable-notifications")
 driver = webdriver.Chrome(chrome_options=options)
 
 #Initiate the bot and run it
-bot = Bot(driver, user, comments, subreddits)
+bot = KarmaFarmer.Bot(driver, user, comments, subreddits)
 bot.run()
 
 ```
