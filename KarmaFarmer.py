@@ -71,16 +71,15 @@ class Scraper:
             
             #Get links of submissions and store them
             scraped = []
-            i = 1
+            i = 0
             while len(scraped) < self.subreddit_options[sub_reddit][1]:
+                i += 1
                 try:
                     scraped += [self.driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[3]/div[1]/div[5]/div[{}]/div/div/div[2]/div[1]/div[1]/div[1]/a'.format(i)).get_attribute('href')]
                     print('Added {}'.format(scraped[-1]))
                 except:
                     print('Error: Could not scrape post. Scraping continues...')
-                    i += 1
                     continue
-                i += 1
             self.scraped_post_links += scraped
             
         return self.scraped_post_links                        
