@@ -18,10 +18,11 @@ git clone https://github.com/erencan-02/RedditKarmaFarmer.git
 import KarmaFarmer
 
 #Create the options you want
+#categories: top,new,hot,rising
 subreddits = {
     "PewdiepieSubmissions": ("new", 500),
     "memes": ("new", 500),
-    "meme": ("new", 300)
+    SUBREDDIT: (CATEGORY, AMOUNT_OF_COMMENTS)
 }
 
 #Make a new user
