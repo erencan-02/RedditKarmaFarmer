@@ -86,20 +86,4 @@ class Scraper:
         return self.scraped_post_links                        
 
 
-subreddits = {
-    "PewdiepieSubmissions": ("new", 500),
-    "memes": ("new", 500),
-    "meme": ("new", 300)
-}
 
-#Disables browser notifications
-options = webdriver.ChromeOptions()
-options.add_argument("--disable-popup-blocking")
-options.add_argument("--disable-infobars")
-options.add_argument("--disable-notifications")
-driver = webdriver.Chrome(chrome_options=options)
-
-user = User("USERNAME", "PASSWORD")
-comments = ["random comments", "a", "b", "c"]
-bot = Bot(driver, user, comments, subreddits)
-bot.run()
