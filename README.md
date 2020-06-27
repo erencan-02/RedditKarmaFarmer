@@ -17,6 +17,7 @@ git clone https://github.com/erencan-02/RedditKarmaFarmer.git
 
 ```python
 import KarmaFarmer
+from selenium import webdriver
 
 #Create the options you want
 #categories: top,new,hot,rising
